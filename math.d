@@ -11,6 +11,11 @@ int fact( int num ) {
 	return result;
 };
 
+int sin( int num ) {
+	// sine of an angle in degrees
+	
+};
+
 int main() {
 	// testing out the all functions
 	int num = fact(7);
