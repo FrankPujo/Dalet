@@ -22,11 +22,21 @@ float pow( float base, int exp ) {
 
 float sin( int angle ) {
 	// sine of an angle in degrees
-	float radians = angle / 180;
-	float sine = radians - (pow(radians, 3) / fact(3)) + (pow(radians, 5) / fact(5)) - (pow(radians, 7) / fact(7)) + (pow(radians, 9) / fact(9));
+
+	float sine = 4 * ( 180 - angle ) / ( 40500 - angle * ( 180 - angle ) );
+
 	return sine;
 };
 
+int abs( int num ) {
+	int res;
+	if ( num = 0 ) {
+		res = num * (-1);
+	} else {
+		res = num;
+	}
+	return res;
+}
 
 int main() {
 	// testing out the all functions
