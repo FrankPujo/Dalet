@@ -23,16 +23,15 @@ float pow( float base, int exp ) {
 float sin( int angle ) {
 	// sine of an angle in degrees
 	float angleDiff = 180 - angle;
-	float term1 = angleDiff * 4 * angle;
 	float angleMult = angle * angleDiff;
-	float term2 = 40500 - angleMult;
-	float sine = term1 / term2;
+	float sine = angleMult * 4 / ( 40500 - angleMult );
 
 	return sine;
 };
 
-int abs( int num ) {
-	int res;
+float abs( float num ) {
+	// the absolute of a number
+	float res;
 	if ( num <= 0 ) {
 		res = num * (-1);
 	} else {
@@ -40,3 +39,9 @@ int abs( int num ) {
 	}
 	return res;
 }
+
+float cos( int angle ) {
+	// cosine of an angle in degrees
+	float cosine = sqrt( 1 - pow( sin(angle), 2 ) );
+	return cosine;
+};
