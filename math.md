@@ -19,3 +19,7 @@ Makes use of the sin() function itself.
 
 ## float abs( float num )
 Returns the absolute value of a number (without the postive or negative sign).
+
+## int[] mults( int num, int times )  
+Returns an array with ordered multiples of integer.  
+The array lenght (and so the number of multiple) goes up to a determined value (times).

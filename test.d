@@ -9,7 +9,8 @@ int main() {
 	float num3 = sin( 190 );
 	float num4 = abs( -1.4 );
 	float num5 = cos( 30 );
-	writeln( num5 );
+	int[] nums6 = mults( 3, 10 );
+	writeln( nums6 );
 
 	return 0;
 }

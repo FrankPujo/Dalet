@@ -45,3 +45,15 @@ float cos( int angle ) {
 	float cosine = sqrt( 1 - pow( sin(angle), 2 ) );
 	return cosine;
 };
+
+int[] mults( int num, int times ) {
+	int[] multiples;
+
+	for ( int i = 0; i < times; i++ ) {
+		int multiple = num * i;
+		int[] add = [ multiple ];
+
+		multiples ~= add;
+	}
+	return multiples;
+}

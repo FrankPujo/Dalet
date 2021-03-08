@@ -4,6 +4,8 @@ Current stage is not suggested for use.
 Modules and functions:  
 * dalet.math  
     * fact()
-    * sin()
-    * abs()
-    * pow()
+	* sin()
+	* cos()
+	* pow()
+	* abs()
+	* mults()
