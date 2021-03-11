@@ -1,6 +1,8 @@
 module dalet.math;
+
 import std.math;
 import std.stdio;
+import std.array;
 
 int fact( int num ) {
 	// factorial of a number
@@ -56,4 +58,20 @@ int[] mults( int num, int times ) {
 		multiples ~= add;
 	}
 	return multiples;
+}
+
+int[] fib( int top ) {
+	int a = 0;
+	int b = 1;
+	int[] result;
+
+	while ( a < top ) {
+		int[] adder = [ a ];
+		result = join( [ result, adder ] );
+		int temp = b;
+		b = a + b;
+		a = temp;
+	}
+
+	return result;
 }

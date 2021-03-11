@@ -9,3 +9,6 @@ Modules and functions:
 	* pow()
 	* abs()
 	* mults()
+	* fib()
+* dalet.array
+	* sort()
