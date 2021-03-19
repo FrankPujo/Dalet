@@ -23,3 +23,7 @@ Returns the absolute value of a number (without the postive or negative sign).
 ## int[] mults( int num, int times )  
 Returns an array with ordered multiples of integer.  
 The array lenght (and so the number of multiple) goes up to a determined value (times).
+
+## float tan( int angle )  
+Tangent trigonometric function.  
+Makes use of sin() and cos() so it has a pretty high level of error.
