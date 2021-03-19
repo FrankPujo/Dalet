@@ -4,6 +4,14 @@ import std.math;
 import std.stdio;
 import std.array;
 
+// constants
+double pi = 3.141593;
+double e = 2.718282;
+double gr = 1.618034;
+double sr2 = 1.414214;
+double sr3 = 1.732051;
+double sr5 = 2.236068;
+
 int fact( int num ) {
 	// factorial of a number
 	int result = num;
@@ -29,7 +37,19 @@ float sin( int angle ) {
 	float sine = angleMult * 4 / ( 40500 - angleMult );
 
 	return sine;
-};
+}
+
+float cos( int angle ) {
+	// cosine of an angle in degrees
+	float cosine = sqrt( 1 - pow( sin(angle), 2 ) );
+	return cosine;
+}
+
+float tan( int angle ) {
+	// tangent of an angle in degrees
+	float tangent = sin( angle ) / cos( angle );
+	return tangent;
+}
 
 float abs( float num ) {
 	// the absolute of a number
@@ -41,12 +61,6 @@ float abs( float num ) {
 	}
 	return res;
 }
-
-float cos( int angle ) {
-	// cosine of an angle in degrees
-	float cosine = sqrt( 1 - pow( sin(angle), 2 ) );
-	return cosine;
-};
 
 int[] mults( int num, int times ) {
 	int[] multiples;
