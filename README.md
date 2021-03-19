@@ -6,6 +6,7 @@ Modules and functions:
     * fact()
 	* sin()
 	* cos()
+	* tan()
 	* pow()
 	* abs()
 	* mults()
