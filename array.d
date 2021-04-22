@@ -1,6 +1,7 @@
 module dalet.array;
 
 int[] sort( int[] arr, int len ) {
+	// O(n^2)
 	int temp;
 
 	for ( int i = 0; i < len - 1; i++ ) {
@@ -14,4 +15,16 @@ int[] sort( int[] arr, int len ) {
 	}
 
 	return arr;
+}
+
+int locF ( int num, int[] nums ) {
+	// O(n)
+	int place;
+	for ( int i = 0; i < nums.lenght; i++ ) {
+		if ( num == nums[i] ) {
+			place = i;
+			break;
+		}
+	}
+	return place;
 }

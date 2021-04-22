@@ -1,7 +1,6 @@
 module dalet.math;
 
 import std.math;
-import std.stdio;
 import std.array;
 
 // constants
@@ -88,4 +87,38 @@ int[] fib( int top ) {
 	}
 
 	return result;
+}
+
+int min( int[] arr ) {
+	int minimum = arr[0];
+
+	for ( int i = 1; i < arr.length; i++ ) {
+		if ( arr[i] < minimum ) {
+			minimum = arr[i];
+		}
+	}
+
+	return minimum;
+}
+
+int max( int[] arr ) {
+	int maximum = 0;
+
+	for ( int i = 0; i < arr.length; i++ ) {
+		if ( arr[i] > maximum ) {
+			maximum = arr[i];
+		}
+	}
+
+	return maximum;
+}
+
+float avg( int[] nums ) {
+	int index = nums.length;
+	int total;
+	for ( int i = 0; i < index; i++ ) {
+		total = total + nums[i];
+	}
+	float average = total / index;
+	return average;
 }
